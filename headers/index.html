@@ -12,9 +12,7 @@
     req.open('HEAD', document.location, false);
     req.send(null);
     var headers = parseHttpHeaders(req.getAllResponseHeaders());
-    </script>
-
-    <script>
+    
     function here() {
      document.write(JSON.stringify(headers["x-user"]));
     }

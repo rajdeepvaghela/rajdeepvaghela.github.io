@@ -2,20 +2,21 @@
   <head>
     <title>Header Test</title>
     <script>
-    function parseHttpHeaders(httpHeaders) {
-        return httpHeaders.split("\n")
-         .map(x=>x.split(/: */,2))
-         .filter(x=>x[0])
-         .reduce((ac, x)=>{ac[x[0]] = x[1];return ac;}, {});
-    }
-    var req = new XMLHttpRequest();
-    req.open('HEAD', document.location, false);
-    req.send(null);
-    var headers = parseHttpHeaders(req.getAllResponseHeaders());
+      function parseHttpHeaders(httpHeaders) {
+          return httpHeaders.split("\n")
+          .map(x=>x.split(/: */,2))
+          .filter(x=>x[0])
+          .reduce((ac, x)=>{ac[x[0]] = x[1];return ac;}, {});
+      }
+      var req = new XMLHttpRequest();
+      req.open('HEAD', document.location, false);
+      req.send(null);
+      var headers = parseHttpHeaders(req.getAllResponseHeaders());
     
-    function here() {
-     document.write(JSON.stringify(headers["x-user"]));
-    }
+      function here() {
+        document.write(JSON.stringify(headers["x-user"]));
+      }
+      
       function fetchHeaders() {
             var req = new XMLHttpRequest();
             req.open('HEAD', document.location, false);
@@ -23,9 +24,18 @@
             var headers = req.getAllResponseHeaders().toLowerCase();
             alert(headers);
         }
+      function fetchHeaders2() {
+            var req = new XMLHttpRequest();
+            req.open('GET', document.location, false);
+            req.send(null);
+            var headers = req.getAllResponseHeaders().toLowerCase();
+            alert(headers);
+        }
     </script>
   </head>
   <body>
+    <h3><script>here();</script><b>
     <button onclick="fetchHeaders()">Fetch</button>
+      <button onclick="fetchHeaders2()">Fetch2</button>
   </body>
 </html>

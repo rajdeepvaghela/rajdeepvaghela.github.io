@@ -3,34 +3,16 @@
     <title>Header Test</title>
     <script>
     
-      function here() {
+      function fetchHeaders() {
           var req = new XMLHttpRequest();
           req.open('HEAD', document.location, false);
           req.send(null);
           var headers = req.getAllResponseHeaders().toLowerCase().replaceAll("\n", "</br>");
           document.write(headers);
       }
-      
-      function fetchHeaders() {
-            var req = new XMLHttpRequest();
-            req.open('HEAD', document.location, false);
-            req.send(null);
-            var headers = req.getAllResponseHeaders().toLowerCase();
-            alert(headers);
-      }
-      function fetchHeaders2() {
-            var req = new XMLHttpRequest();
-            req.open('GET', document.location, false);
-            req.send(null);
-            var headers = req.getAllResponseHeaders().toLowerCase();
-            alert(headers);
-      }
     </script>
   </head>
   <body>
-      <button onclick="fetchHeaders()">Fetch</button>
-      <button onclick="fetchHeaders2()">Fetch2</button>
-    
-      <h3><script>here();</script><b>
+      <h3><script>fetchHeaders();</script><b>
   </body>
 </html>

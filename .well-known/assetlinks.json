@@ -1,9 +1,0 @@
-[{
-  "relation": ["delegate_permission/common.use_as_origin", "delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.practice.customchrometab",
-    "sha256_cert_fingerprints":
-    ["F3:0E:53:51:AC:F7:35:E2:78:37:53:CE:93:FF:94:F1:7E:A9:19:82:69:55:10:13:E1:43:2C:B3:51:38:95:43"]
-  }
-}]

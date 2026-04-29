@@ -23,9 +23,9 @@ Welcome to my GitHub profile! I’m a passionate Senior Android Engineer, focuse
 - [VerticalStepper](https://github.com/rajdeepvaghela/VerticalStepper): Create step-by-step UIs with ease on Android.
 - [CircularList](https://github.com/rajdeepvaghela/CircularList): Circular/List wheel UI component for Android apps.
 
-## 📈 GitHub Stats
+<!-- ## 📈 GitHub Stats -->
 
-![Rajdeep's GitHub stats](https://github-readme-stats.vercel.app/api?username=rajdeepvaghela&show_icons=true&hide_border=true&count_private=true&theme=default)
+<!-- ![Rajdeep's GitHub stats](https://github-readme-stats.vercel.app/api?username=rajdeepvaghela&show_icons=true&hide_border=true&count_private=true&theme=default) -->
 
 ## 🌐 Connect with Me
 
